@@ -9,6 +9,11 @@ namespace BasicWebAPI.Services.Implementation
     {
         private readonly ApplicationDbContext _dbContext;
 
+        public CountryService(ApplicationDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         public async Task CreateCountryAsync(Country country)
         {
             try

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace BasicWebAPI.Model
 {
@@ -9,6 +10,7 @@ namespace BasicWebAPI.Model
 
         public string CountryName { get; set; }
 
+        [JsonIgnore]
         public ICollection<Contact> Contacts { get; set; }
     }
 }

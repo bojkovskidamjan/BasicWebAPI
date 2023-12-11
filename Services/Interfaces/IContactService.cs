@@ -13,5 +13,6 @@ namespace BasicWebAPI.Services.Interfaces
 
         IQueryable<Contact> AsQueryable();
 
+
     }
 }
